@@ -22,6 +22,13 @@
     <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css"
         rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <!-- Tombol WhatsApp melayang -->
+<a href="https://wa.me/+6283862327274"
+   target="_blank"
+   class="position-fixed bottom-0 end-0 m-4 p-3 bg-success text-white rounded-circle shadow-lg"
+   style="z-index: 9999; font-size: 24px;">
+    <i class="lab la-whatsapp"></i>
+</a>
 
 </head>
 

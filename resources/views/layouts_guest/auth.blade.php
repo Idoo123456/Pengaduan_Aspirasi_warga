@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>BinaDesa | {{ $title }}</title>
+  <title>BinaDesa | {{ $title ?? 'BinaDesa' }}</title>
+
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="{{ asset('template_guest/assets/images/favicon.ico') }}" />

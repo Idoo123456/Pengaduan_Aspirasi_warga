@@ -10,7 +10,6 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PengaduanController;
 use App\Http\Controllers\PenilaianController;
 
-
 Route::get('/', function () {
     return redirect()->route('guest.login');
 });
@@ -84,7 +83,7 @@ Route::middleware('auth')->group(function () {
         Route::put('/pengaduan/{pengaduan}', [PengaduanController::class, 'update'])->name('pengaduan.update');
         Route::get('/pengaduan/riwayat', [PengaduanController::class, 'riwayat'])->name('pengaduan.riwayat');
         Route::get('/pengaduan/show/{id}', [PengaduanController::class, 'show'])->name('pengaduan.show');
-        
+
         Route::get('/penilaian/pengaduan', [PenilaianController::class, 'pengaduan'])->name('penilaian.pengaduan');
         Route::get('/penilaian', [PenilaianController::class, 'index'])->name('penilaian.index');
         Route::get('penilaian/create/{pengaduan_id}', [PenilaianController::class, 'create'])
@@ -102,3 +101,14 @@ Route::middleware('auth')->group(function () {
     // ==========================
     Route::get('/penilaian-layanan', [PenilaianController::class, 'index'])->name('penilaian.layanan');
 });
+
+
+Route::get('/', function () {
+    $title = "Beranda Aplikasi";
+    return view('welcome', compact('title'));
+})->name('home');
+
+Route::get('/about', function () {
+    $title = "Tentang Aplikasi";
+    return view('about', compact('title'));
+})->name('about');

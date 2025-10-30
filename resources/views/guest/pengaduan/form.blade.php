@@ -57,7 +57,7 @@
                                     <option value="{{ $k->id }}" {{ (old('kategori_id', $pengaduan->kategori_id ?? '') == $k->id) ? 'selected' : '' }}>
                                         {{ $k->nama }}
                                     </option>
-                                    
+
                                 @endforeach
                             </select>
                             @error('kategori_id')
@@ -188,7 +188,7 @@
 @endsection
 
 @section('scripts')
-   
+
     <script>
         $(document).ready(function () {
             // Inisialisasi Select2
@@ -220,7 +220,7 @@
                     previewStatus.innerHTML = '<i class="bi bi-image me-1"></i> Tidak ada lampiran terupload.';
                 }
 
-                // Pada prakteknya, untuk mengembalikan preview lama di JavaScript, 
+                // Pada prakteknya, untuk mengembalikan preview lama di JavaScript,
                 // Anda perlu menyimpan data HTML preview lama dalam variabel JS saat halaman dimuat.
                 // Tapi untuk kesederhanaan, kita biarkan kosong atau hanya atur status teks.
 

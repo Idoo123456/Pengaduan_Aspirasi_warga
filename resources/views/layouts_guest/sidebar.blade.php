@@ -8,6 +8,10 @@
         </div>
     </div>
     <ul id="iq-sidebar-toggle" class="iq-menu d-flex">
+        <li class="nav-item">
+    <a class="nav-link" href="{{ route('about') }}">Tentang</a>
+</li>
+
         <!-- Dashboard -->
         <li class="active">
             <a href="{{ route('dashboard') }}">
